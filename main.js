@@ -67,17 +67,17 @@ window.addEventListener('scroll', scrollActive)
 
 const sr = ScrollReveal({
     distance: '60px',
-    duration: 2500,
-    delay: 400,
+    duration: 1000,
+    delay: 1,
     reset: true
 })
 
-sr.reveal(`.home__header, .section__title`, {delay: 600})
-sr.reveal(`.home__footer`, {delay: 700})
-sr.reveal(`.home__img`, {delay: 900, origin: 'top'})
+sr.reveal(`.home__header, .section__title`, {delay: 1})
+sr.reveal(`.home__footer`, {delay: 1})
+sr.reveal(`.home__img`, {delay: 1, origin: 'top'})
 
-sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy`, {origin: 'top', interval: 100})
-sr.reveal(`.specs__data, .discount__animate`, {origin: 'left', interval: 100})
-sr.reveal(`.specs__img, .discount__img`, {origin: 'right'})
-sr.reveal(`.case__img`, {origin: 'top'})
-sr.reveal(`.case__data`, {})
+sr.reveal(`.sponsor__img, .guitars__card, .footer__logo, .footer__content, .footer__copy`, {delay: 1, origin: 'top', interval: 100})
+sr.reveal(`.types__data, .discount__animate`, {delay: 1, origin: 'left', interval: 100})
+sr.reveal(`.types__img, .discount__img`, {delay: 1, origin: 'right'})
+sr.reveal(`.favorite__img`, {delay: 1, origin: 'top'})
+sr.reveal(`.favorite__data`, {})

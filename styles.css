@@ -192,7 +192,7 @@ img{
 .nav__link{
     color: var(--white-color);
     font-size: var(--h2-font-size);
-    text-transform: uppercase;
+    text-transform: upperfavorite;
     font-weight: var(--font-semi-bold);
     background: var(--text-gradient);
     color: transparent;
@@ -321,39 +321,39 @@ img{
 }
 
 
-.specs__container{
+.types__container{
     position: relative;
 }
 
-.specs__content{
+.types__content{
     row-gap: 1.5rem;
 }
 
-.specs__data{
+.types__data{
     display: grid;
     row-gap: .25rem;
 }
 
-.specs__icon{
+.types__icon{
     font-size: 1.2rem;
     color: var(--white-color);
 }
 
-.specs__title{
+.types__title{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
 
-.specs__subtitle{
+.types__subtitle{
     font-size: var(--smaller-font-size);
 }
 
-.specs__data:nth-child(1),
-.specs__data:nth-child(4){
+.types__data:nth-child(1),
+.types__data:nth-child(4){
     margin-left: var(--mb-1-5);
 }
 
-.specs__img{
+.types__img{
     width: 300px;
     position: absolute;
     top: 1.2rem;
@@ -362,22 +362,22 @@ img{
 
 
 
-.case__container{
+.favorite__container{
     position: relative;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.case__data{
+.favorite__data{
     padding: 5rem 0 3rem;
 }
 
-.case__img{
+.favorite__img{
     width: 250px;
     position: absolute;
     left: -2rem;
 }
 
-.case__description{
+.favorite__description{
     margin-bottom: var(--mb-1-5);
     line-height: var(--text-line-height);
 }
@@ -405,18 +405,18 @@ img{
     right: -11rem;
 }
 
-.products__line{
+.guitars__line{
     line-height: 3.5rem;
     margin-top: -1rem;
 }
 
-.products__container{
+.guitars__container{
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem 1.5rem;
     padding-top: 3rem;
 }
 
-.products__card{
+.guitars__card{
     position: relative;
     height: 132px;
     background-color: var(--container-color);
@@ -425,7 +425,7 @@ img{
     display: grid;
 }
 
-.products__img{
+.guitars__img{
     width: 140px;
     position: absolute;
     inset: 0;
@@ -434,20 +434,20 @@ img{
     top: -3rem;
 }
 
-.products__content{
+.guitars__content{
     align-self: flex-end;
 }
 
-.products__title,
-.products__price{
+.guitars__title,
+.guitars__type{
     font-size: var(--small-font-size);
 }
 
-.products__price{
+.guitars__type{
     font-weight: var(--font-semi-bold);
 }
 
-.products__button{
+.guitars__button{
     position: absolute;
     right: 0.5rem;
     bottom: 0.5rem;
@@ -575,12 +575,18 @@ img{
 }
 
 @media screen and (min-width: 340px) {
-    .case__img{
+    .favorite__img{
         width: 250px;
         top: 5rem;
-    }
+    }  
 }
 
+@media screen and (max-width: 576px) {
+
+    .discount__img{
+        display: none;
+    }
+}
 @media screen and (max-width: 340px) {
     .container{
         margin-left: var(--mb-1);
@@ -609,16 +615,16 @@ img{
         font-size: var(--small-font-size);
     }
 
-    .specs__img{
+    .types__img{
         padding-top: 2.5rem;
         width: 250px;
     }
 
-    .case__container{
+    .favorite__container{
         grid-template-columns: .6fr 1fr;
     }
 
-    .case__img{
+    .favorite__img{
         width: 250px;
         top: 7rem;
         left: -5.5rem;
@@ -629,7 +635,7 @@ img{
         top: 7rem;
     }
 
-    .products__container{
+    .guitars__container{
         grid-template-columns: 142px;
         justify-content: center;
     }
@@ -649,26 +655,26 @@ img{
         left: 0;
     }
 
-    .specs__img{
+    .types__img{
         position: initial;
     }
 
-    .specs__container{
+    .types__container{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         align-items: center;
     }
 
-    .case__img{
+    .favorite__img{
         width: 250px;
         position: initial;
     }
 
-    .case__data{
+    .favorite__data{
         padding: 0;
     }
 
-    .case__container{
+    .favorite__container{
         grid-template-columns: max-content 250px;
         justify-content: center;
         align-items: center;
@@ -733,19 +739,19 @@ img{
         padding-top: 6.5rem;
     }
 
-    .specs__img{
+    .types__img{
         width: 350px;
     }
 
-    .case__container{
+    .favorite__container{
         column-gap: 1rem;
     }
 
-    .case__img{
+    .favorite__img{
         width: 300px;
     }
 
-    .case__description{
+    .favorite__description{
         margin-bottom: var(--mb-2);
     }
 
@@ -765,17 +771,17 @@ img{
         margin-bottom: var(--mb-2);
     }
 
-    .products__container{
+    .guitars__container{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem 2rem;
     }
 
-    .products__card{
+    .guitars__card{
         height: 152px;
         padding: .85rem;
     }
 
-    .products__img{
+    .guitars__img{
         width: 180px;
     }
 
